@@ -6,3 +6,24 @@ html {
     background-size: cover;
 }
 
+.text-block {
+	font-family: 'Source Sans Pro', sans-serif;
+    color: #F2E3CC;
+    font-size: 10px;
+    width: 45%;
+    margin-left: 27%;
+}
+
+.text-block ul li a{
+	font-family: 'Source Sans Pro', sans-serif;
+    color: #F2E3CC;
+    font-size: 18px;
+}
+
+.text-block ul li a:hover{
+	text-decoration: underline;
+}
+
+#section1 img {
+	width: 50%;
+}
