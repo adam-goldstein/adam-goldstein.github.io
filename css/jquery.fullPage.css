@@ -201,6 +201,7 @@ html.fp-enabled,
     height: 8px;
     width: 8px;
     border-radius: 100%;
+    background-color: #b0b0b0;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
