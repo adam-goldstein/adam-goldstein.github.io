@@ -11,6 +11,11 @@
     transition: transform .5s ease-in-out;
 }
 
+.close {
+    width: 20%;
+    background-color: red;
+}
+
 .content {
     float: left;
     width: 550px;

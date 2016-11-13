@@ -30,6 +30,7 @@ html.fp-enabled,
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
 }
+
 .fp-slide {
     float: left;
 }
@@ -77,16 +78,62 @@ html.fp-enabled,
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-.fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+
+#video-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
+
+#myVideo{    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black;
+    background-image: /* our video */;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+}
+}
+
+.close {
+    background-color: red;
+}
+
+.close a{
+    float: right;
+    padding: 20px;
+    width: 40px;
+}
+
+.down {    
+    background-color: red;
+    margin-top: 100px;
+}
+
+.fp-controlArrow.fp-prev {
+    color: transparent;
+    left: 15px;
+    margin-left:100px;
+    width: 0;
+    border-width: 43.5px 23px 1.5px 0; 
+    background-image: url(../assets/arrow-left.svg);
+}
+
 .fp-controlArrow.fp-next {
+    color: transparent;
+    margin-right:100px;
     right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    border-width: 0px 0 43.5px 22px;
+    background-image: url(../assets/arrow-right.svg);
 }
 .fp-scrollable {
     overflow: scroll;

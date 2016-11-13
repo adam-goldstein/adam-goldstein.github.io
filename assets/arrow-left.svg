@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="43px" viewBox="0 0 23 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="200 339 230 342.569674 227.180804 372"></polyline>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="33" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Adam-Slideshow" transform="translate(-195.000000, -335.000000)" stroke="#F2E3CC" stroke-width="6">
+            <use id="Rectangle" mask="url(#mask-2)" transform="translate(215.000000, 355.500000) rotate(-143.000000) translate(-215.000000, -355.500000) " xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/video.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
+	<link rel="icon" href="http://getemoji.com/assets/ico/favicon.png" type="image/png">
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -29,6 +31,7 @@
 			$('#fullpage').fullpage({
 				verticalCentered: true,
 				sectionsColor: ['#5C5C5C', '#666666', '#5C5C5C', '#666666'],
+				anchors: ['section0', 'section1', 'section2', 'section3'],
 				afterRender: function(){
 
 
@@ -37,28 +40,40 @@
 				}
 			});
 		});
-
-		$(document).ready(function(){
-			$("#demosMenu").change(function(){
-			  window.location.href = $(this).find("option:selected").attr("id") + '.html';
-			});
-		});
 	</script>
 </head>
-<body>
-	<div id="fullpage">
-		<div class="section " id="section0">
-			<video autoplay loop muted id="myVideo">
+<body>	
+	<!--<header class="home">
+		<div id="video-container">
+			<!--<div class="down-arrow">
+				<img class="down" href="assets/arrow-down.svg"> 
+			</div>
+			<video autoplay loop muted id="myVideo-home">
 				<source src="assets/video.mp4" type="video/mp4">
 			</video>
-			<div class="layer">
-				<h1></h1>
+		</div>
+	</header>-->
+	<div id="fullpage">
+		<div class="section" id="section0">
+			<video autoplay loop muted id="myVideo" data-menuanchor="section0" >
+					<source src="assets/video.mp4" type="video/mp4">
+			</video>
+			<div class="arrow-down">
+				<a data-menuanchor="section1" href="#section1" class="active"><img src="assets/arrow-down.svg"></a>
 			</div>
 		</div>
 		<div class="section" id="section1">
 			<div class="text-block">
 		    	<p> Hello. My name is Adam Goldstein. I am an artist and I live in Berlin. My name is Adam Goldstein. I am an artist and I live in Berlin. My name is Adam Goldstein. I am an artist and I live in Berlin. </p>
 		    </div>
+		    <div id="menu-main">
+			    <ul>
+			    	<li data-menuanchor="section0"><a href="#section0"> Home </a> </li>
+			    	<li data-menuanchor="section1"> About </li>
+			    	<li data-menuanchor="section2"> <a href="#section2">Artworks </a></li>
+			    	<li data-menuanchor="section3"> <a href="#section3"> Contact </a></li>
+			    </ul>
+			</div>
 		</div>
 		<div class="section" id="section2">
 			<div class="text-block">
@@ -68,6 +83,14 @@
 					<li><a href="2d.html"> Two Dimensional </a></li>
 				<ul>
 			</div>
+			<div id="menu-main">
+			    <ul>
+			    	<li data-menuanchor="section0"><a href="#section0"> Home </a></li>
+			    	<li data-menuanchor="section1"><a href="#section1"> About </a></li>
+			    	<li data-menuanchor="section2"> Artworks </li>
+			    	<li data-menuanchor="section3"> <a href="#section3"> Contact </a></li>
+			    </ul>
+			</div>
 		</div>
 		<div class="section" id="section3">
 			<div class="text-block">
@@ -76,6 +99,14 @@
 					email: adgold89@gmail.com </br>
 					phone: 015215154653
 				</p>
+			</div>
+			<div id="menu-main">
+			    <ul>
+			    	<li data-menuanchor="section0"><a href="#section0"> Home </li></a>
+			    	<li data-menuanchor="section1"><a href="#section1"> About </li></a>
+			    	<li data-menuanchor="section2"> <a href="#section2"> Artworks </a></li>
+			    	<li data-menuanchor="section3">Contact</li>
+			    </ul>
 			</div>
 		</div>
 	</div>
