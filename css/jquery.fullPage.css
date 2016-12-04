@@ -42,7 +42,7 @@ html.fp-enabled,
     z-index:1;
     height: 100%;
     overflow: hidden;
-    position: relative;
+    position: absolute;
     -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
     transition: all 0.3s ease-out;
 }
@@ -257,4 +257,15 @@ html.fp-enabled,
 .fp-auto-height .fp-slide,
 .fp-auto-height .fp-tableCell{
     height: auto !important;
+}
+
+@media screen and (max-width: 880px) {
+    .fp-controlArrow.fp-prev {
+        left: 10px;
+        margin-left: 0;
+    }
+
+    .fp-controlArrow.fp-next {
+        margin-right: 0;
+    }
 }

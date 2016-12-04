@@ -302,4 +302,10 @@ p{
 	#infoMenu li a {
 		color: #fff;
 	}
-	</style>
+
+@media screen and (max-width: 880px) {
+	fieldset,img {
+	    border: 0;
+	    width: 50%;
+	}
+}

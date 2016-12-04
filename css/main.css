@@ -72,6 +72,10 @@ html {
     padding: 15px 0;
 }
 
+#slide1-work img {
+    width: 50%;
+}
+
 @media screen and (max-width: 880px) {
     .bg-image {
         display: block;
