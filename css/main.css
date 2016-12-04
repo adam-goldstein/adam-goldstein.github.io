@@ -1,5 +1,5 @@
 html {
-    background: url(../assets/placeholder.png) no-repeat center center fixed;
+    background: url(img/placeholder.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -25,8 +25,12 @@ html {
 	text-decoration: underline;
 }
 
-#section1 img {
-	width: 50%;
+.arrow-down {
+    display: none;
+}
+
+.bg-image {
+    display: none;
 }
 
 #menu-main {    
@@ -52,9 +56,81 @@ html {
     width: 100%;
     left: 0;
     bottom: 0;
+} 
+
+.arrow-up {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
-.arrow-down img {
+.arrow-down img,
+.arrow-up img {
     border: 0;
     padding: 15px 0;
+}
+
+@media screen and (max-width: 880px) {
+    .bg-image {
+        display: block;
+    }
+
+	.bg-image img {
+        width: 100%;
+    }
+
+    #myVideo {
+        display: none;
+    }
+
+    .text-block {
+        width: 50%;
+        margin-left: 22%;
+    }
+
+    .text-block p {
+        font-size: 30px;
+    }
+
+    .text-block ul li a {
+        font-size: 30px;
+    }
+
+    .arrow-down {
+        display: block;
+    }
+
+    #fp-nav ul, .fp-slidesNav ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #myVideo {
+        display: none;
+    }
+
+    .text-block {
+        margin-left: 40px;
+        width: 75%;
+    }
+
+    .text-block p {
+        font-size: 20px;
+    }
+
+    .text-block ul li a {
+        font-size: 20px;
+    }
+
+    .arrow-down {
+        display: block;
+    }
+
+    #fp-nav ul, .fp-slidesNav ul {
+        display: none;
+    }
 }
