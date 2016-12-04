@@ -53,8 +53,7 @@ html {
 .arrow-down {
     position: absolute;
     z-index: 4;
-    width: 100%;
-    left: 0;
+    left: 45%;
     bottom: 0;
 } 
 
