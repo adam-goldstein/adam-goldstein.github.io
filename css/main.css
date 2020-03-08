@@ -20,12 +20,12 @@ html {
     float: left;
     color: #F2E3CC;
     font-size: 10px;
-    margin-left: 45%;
+    margin-left: 40%;
 }
 
 .text-block ul li a,
 .section-button ul li a{
-	font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #F2E3CC;
     font-size: 18px;
 }
@@ -75,6 +75,8 @@ html {
     border: 1px solid;
     padding: 10px;
     width: 120px;
+    float: left;
+    margin-right: 10px;
 }
 
 .arrow-down {
