@@ -1,161 +1,75 @@
 <!DOCTYPE html>
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)&!(IEMobile)]><html class="no-js lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
 <html class="no-js" lang="en">
-<head>
-	<title> Adam Goldstein </title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="Adam Goldstein" content="Artist Website">
-
-	<link rel="stylesheet" href="css/main.css">
-
-	<link rel="icon" href="img/favicon.png" type="image/png">
-
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
-	<!-- TINY SLIDER -->
-
-	<link rel="stylesheet" href="css/tiny-slider/prism.css">
-    <link rel="stylesheet" href="css/tiny-slider/tiny-slider.css">
-    <link rel="stylesheet" href="css/tiny-slider/styles.css">
-
-	<meta name="HandheldFriendly" content="True">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Tiny slider
+    </title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">	
-	<!-- TINY SLIDER END -->
-
-	<!-- FULL PAGE -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
-
-	<!-- VIDEO -->
-	<link rel="stylesheet" href="css/video.css">
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				verticalCentered: true,
-				sectionsColor: ['#5C5C5C', '#666666', '#5C5C5C', '#666666', '#5C5C5C'],
-				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['Home', 'About', 'Art work', 'Contact', 'Slider'],
-				afterRender: function(){
-					//playing the video
-					$('video').get(0).play();
-				}
-			});
-		});
-	</script>
-</head>
-<body>	
-	<div id="fullpage">
-		<!-- VIDEO -->
-		<div class="section" id="section0">
-			<video autoplay loop muted id="myVideo" data-menuanchor="section0" >
-					<source src="assets/video.mp4" type="video/mp4">
-			</video>
-			<div class="bg-image">
-				<img src="img/placeholder.jpg">
-			</div>
-			<div class="arrow-down">
-				<a data-menuanchor="section" href="#section1"><img src="assets/arrow-down.svg"></a>
-			</div>
-		</div>
-
-		<!-- ABOUT -->
-		<div class="section" id="section1">
-			<div class="text-block">
-		    	<p> Un cubo blanco, un arbusto solitario en la esquina, y los residuos citadinos donde hoy orino. </p>
-		    </div>
-		    <div class="arrow-down">
-				<a data-menuanchor="section" href="#section2"><img src="assets/arrow-down.svg"></a>
-			</div>
-		</div>
-
-		<!-- PORTFOLIO BUTTONS -->
-		<div class="section" id="section2">
-			<div class="section-button">
-				<ul> 
-					<li class="button"><a href="slider-test.html" target="_blank"> View projects </a></li>
-				</ul>
-			</div>
-			<div class="section-button">
-				<ul> 
-					<li class="button"><a href="assets/adam_goldstein_CV_2020.pdf" target="_blank"> CV </a></li>
-				</ul>
-			</div>
-			<div class="arrow-down">
-				<a data-menuanchor="section" href="#section2"><img src="assets/arrow-down.svg"></a>
-			</div>
-		</div>
-
-		<!-- CONTACT -->
-		<div class="section" id="section3">
-			<div class="arrow-up">
-				<a data-menuanchor="section" href="#firstPage"><img src="assets/arrow-up.svg"></a>
-			</div>
-			<div class="text-block">
-				<p> Please contact me below: </p>
-				<p>	email: adgold89(at)gmail.com </p>
-				<p>	phone: 015215154653 </p>
-			</div>
-		</div>
-
-		<!-- SLIDER -->
-		<div class="section" id="section4">
-			<div id="autoHeight_wrapper">
-		        <div class="autoHeight" id="autoHeight">
-		          <div>
-		            <div>
-		              <img src="https://source.unsplash.com/collection/993239/1600x500" alt="" width="1600" height="500">
-		            </div>
-		            <p>
-		              Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
-		            </p>
-		          </div>
-		          <div>
-		            <div>
-		              <img src="https://source.unsplash.com/collection/1673600/1600x700" alt="" width="1600" height="700">
-		            </div>
-		            <p>
-		              Corrupti, libero minima nihil expedita officiis? Quo.
-		            </p>
-		          </div>
-		          <div>
-		            <div>
-		              <img src="https://source.unsplash.com/collection/1513994/1600x600" alt="" width="1600" height="600">
-		            </div>
-		            <p>
-		              Alias rem, ab impedit recusandae repellat tempore.
-		            </p>
-		          </div>
-		          <div>
-		            <div>
-		              <img src="https://source.unsplash.com/collection/502925/1600x800" alt="" width="1600" height="800">
-		            </div>
-		            <p>
-		              Nisi inventore quo delectus perspiciatis voluptatibus, quae.
-		            </p>
-		          </div>
-		          <div>
-		            <div>
-		              <img src="https://source.unsplash.com/collection/1891993/1600x500" alt="" width="1600" height="500">
-		            </div>
-		            <p>
-		              Nisi harum earum consectetur laudantium iusto, laboriosam.
-		            </p>
-		          </div>
-		        </div>
-		    </div>
-		</div>
-	</div> 
-	<script src="js/prism.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="css/tiny-slider/prism.css">
+    <link rel="stylesheet" href="css/tiny-slider/tiny-slider.css">
+    <link rel="stylesheet" href="css/tiny-slider/styles.css"><!--[if (IE 8)&!(IEMobile)]><script src="../dist/tiny-slider.helper.ie8.js"></script><![endif]-->
+  </head>
+  <body>
+    <div id="autoHeight_wrapper">
+        <h2>
+          Autoheight
+        </h2>
+        <div class="autoHeight" id="autoHeight">
+          <div>
+            <div>
+              <img src="https://source.unsplash.com/collection/993239/1600x500" alt="" width="1600" height="500">
+            </div>
+            <p>
+              Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="https://source.unsplash.com/collection/1673600/1600x700" alt="" width="1600" height="700">
+            </div>
+            <p>
+              Corrupti, libero minima nihil expedita officiis? Quo.
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="https://source.unsplash.com/collection/1513994/1600x600" alt="" width="1600" height="600">
+            </div>
+            <p>
+              Alias rem, ab impedit recusandae repellat tempore.
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="https://source.unsplash.com/collection/502925/1600x800" alt="" width="1600" height="800">
+            </div>
+            <p>
+              Nisi inventore quo delectus perspiciatis voluptatibus, quae.
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="https://source.unsplash.com/collection/1891993/1600x500" alt="" width="1600" height="500">
+            </div>
+            <p>
+              Nisi harum earum consectetur laudantium iusto, laboriosam.
+            </p>
+          </div>
+        </div>
+    </div>
+    <script src="js/prism.js"></script>
     <script>
 
     var doc = document,
@@ -583,5 +497,5 @@
     };
     }
     </script>
-</body>
+  </body>
 </html>
