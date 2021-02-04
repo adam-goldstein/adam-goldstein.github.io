@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<title> Adam Goldstein </title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Adam Goldstein" content="Artist Website">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="icon" href="img/favicon.png" type="image/png">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+	<!-- TINY SLIDER -->
+
+	<link rel="stylesheet" href="css/tiny-slider/prism.css">
+  <link rel="stylesheet" href="css/tiny-slider/tiny-slider.css">
+  <link rel="stylesheet" href="css/tiny-slider/styles.css">
+
+	<meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<!-- TINY SLIDER END -->
+</head>
+<body>	
+		<div id="autoHeight_wrapper">
+		        <div class="autoHeight" id="autoHeight">
+		          <div>
+		            <div>
+		              <img src="https://source.unsplash.com/collection/993239/1600x500" alt="" width="1600" height="500">
+		            </div>
+		            <p>
+		              Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
+		            </p>
+		          </div>
+		          <div>
+		            <div>
+		              <img src="https://source.unsplash.com/collection/1673600/1600x700" alt="" width="1600" height="700">
+		            </div>
+		            <p>
+		              Corrupti, libero minima nihil expedita officiis? Quo.
+		            </p>
+		          </div>
+		          <div>
+		            <div>
+		              <img src="https://source.unsplash.com/collection/1513994/1600x600" alt="" width="1600" height="600">
+		            </div>
+		            <p>
+		              Alias rem, ab impedit recusandae repellat tempore.
+		            </p>
+		          </div>
+		          <div>
+		            <div>
+		              <img src="https://source.unsplash.com/collection/502925/1600x800" alt="" width="1600" height="800">
+		            </div>
+		            <p>
+		              Nisi inventore quo delectus perspiciatis voluptatibus, quae.
+		            </p>
+		          </div>
+		          <div>
+		            <div>
+		              <img src="https://source.unsplash.com/collection/1891993/1600x500" alt="" width="1600" height="500">
+		            </div>
+		            <p>
+		              Nisi harum earum consectetur laudantium iusto, laboriosam.
+		            </p>
+		          </div>
+		        </div>
+		    </div>
+		</div>
+	<script src="js/prism.js"></script>
+    <script>
+
+    var doc = document,
+      slideList = doc.querySelectorAll('.slider-container > div'),
+      pageNavContainer = doc.querySelector('.nav'),
+      pageNav = doc.querySelector('.nav ul'),
+      toggleHandle = doc.querySelector('.nav-toggle-handle'),
+      divider = window.innerHeight / 2,
+      scrollTimer,
+      resizeTimer;
+
+    toggleHandle.onclick = function () {
+    var classN = pageNavContainer.className;
+    pageNavContainer.className = (classN.indexOf(' active') > 0) ? classN.replace(' active', '') : classN + ' active';
+    };
+
+    if (window.addEventListener) {
+    window.addEventListener('scroll', function () {
+      clearTimeout(scrollTimer);
+
+      scrollTimer = setTimeout(function () {
+        [].forEach.call(slideList, function (el) {
+          var rect = el.getBoundingClientRect(),
+              navLink = pageNav.querySelector('[href="#' + el.id + '"]');
+          if (rect.top <= divider && rect.bottom > divider) {
+            if (navLink.className !== 'active') { navLink.className = 'active'; }
+          } else {
+            if (navLink.className !== '') { navLink.className = ''; }
+          }
+        });
+      }, 100);
+    });
+
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+
+      resizeTimer = setTimeout(function () {
+        divider = window.innerHeight / 2;
+      }, 100);
+    });
+
+    pageNav.addEventListener('click', function () {
+      var classN = pageNavContainer.className;
+      if (classN.indexOf(' active') > 0) { pageNavContainer.className = classN.replace(' active', ''); }
+    });
+    }
+
+    var mobile = 'false',
+      isTestPage = false,
+      isDemoPage = true,
+      classIn = 'jello',
+      classOut = 'rollOut',
+      speed = 400,
+      doc = document,
+      win = window,
+      ww = win.innerWidth || doc.documentElement.clientWidth || doc.body.clientWidth,
+      fw = getFW(ww),
+      initFns = {},
+      sliders = new Object(),
+      edgepadding = 50,
+      gutter = 10;
+
+    function getFW (width) {
+    var sm = 400, md = 900, lg = 1400;
+    return width < sm ? 150 : width >= sm && width < md ? 200 : width >= md && width < lg ? 300 : 400;
+    }
+    window.addEventListener('resize', function() { fw = getFW(ww); });
+    </script>
+    <script src="js/tiny-slider.js"></script>
+    <script>
+
+    // <script type="module">
+    // import { tns } from '../src/tiny-slider.js';
+
+    var options = {
+    'base': {
+      container: '',
+      items: 3,
+      // loop: false,
+      slideBy: 'page',
+      mouseDrag: true,
+    },
+    'start-index': {
+      container: '',
+      items: 3,
+      slideBy: 'page',
+      loop: false,
+      startIndex: 6,
+    },
+    'few-items': {
+      container: '',
+      items: 9,
+      edgePadding: edgepadding,
+      slideBy: 'page',
+      mouseDrag: true,
+      arrowKeys: true,
+      autoplay: true,
+      loop: false,
+    },
+    'mouse-drag': {
+      container: '',
+      items: 3,
+      mouseDrag: true,
+      slideBy: 'page',
+    },
+    'mouse-drag2': {
+      container: '',
+      items: 3,
+      mouseDrag: true,
+      slideBy: 'page',
+    },
+    'gutter': {
+      container: '',
+      items: 3,
+      gutter: gutter,
+    },
+    'edgePadding': {
+      container: '',
+      items: 3,
+      edgePadding: edgepadding,
+    },
+    'edgePadding-gutter': {
+      container: '',
+      items: 3,
+      gutter: gutter,
+      edgePadding: edgepadding,
+    },
+    'non-loop': {
+      container: '',
+      // items: 3,
+      loop: false,
+      responsive: {
+        350: {
+          items: 2
+        },
+        500: {
+          items: 3
+        }
+      },
+    },
+    'rewind': {
+      container: '',
+      items: 3,
+      rewind: true,
+    },
+    'center': {
+      container: '',
+      items: 2,
+      center: true,
+      loop: false,
+    },
+    'slide-by-page': {
+      container: '',
+      items: 3,
+      slideBy: 'page',
+    },
+    'fixedWidth': {
+      container: '',
+      fixedWidth: fw,
+    },
+    'fixedWidth-gutter': {
+      container: '',
+      gutter: gutter,
+      fixedWidth: fw,
+    },
+    'fixedWidth-edgePadding': {
+      container: '',
+      edgePadding: edgepadding,
+      fixedWidth: fw,
+    },
+    'fixedWidth-edgePadding-gutter': {
+      container: '',
+      gutter: gutter,
+      edgePadding: edgepadding,
+      fixedWidth: fw,
+      slideBy: 2,
+      loop: false,
+      arrowKeys: true,
+    },
+    'autoWidth': {
+      autoWidth: true,
+      items: 3.3,
+      // slideBy: 2.6,
+      gutter: 10,
+      mouseDrag: true,
+      swipeAngle: false,
+    },
+    'autoWidth-non-loop': {
+      autoWidth: true,
+      loop: false,
+      mouseDrag: true,
+    },
+    'autoWidth-lazyload': {
+      autoWidth: true,
+      items: 3.3,
+      slideBy: 2.6,
+      gutter: 10,
+      mouseDrag: true,
+      lazyload: true,
+    },
+    'responsive': {
+      items: 2,
+      controls: false,
+      responsive: {
+        350: {
+          items: 3,
+          controls: true,
+          edgePadding: 30,
+        },
+        500: {
+          items: 4
+        }
+      },
+    },
+    'responsive1': {
+      container: '',
+      gutter: 10,
+      slideBy: 1,
+      responsive: {
+        350: {
+          items: 2,
+          edgePadding: 20,
+        },
+        500: {
+          items: 3,
+          gutter: 0,
+          edgePadding: 40,
+          slideBy: 'page',
+        }
+      },
+    },
+    'responsive2': {
+      items: 3,
+      autoplayTimeout: 350,
+      responsive: {
+        350: {
+          controls: false,
+          autoplay: true,
+          autoplayTimeout: 1000,
+          autoplayHoverPause: true,
+        },
+        500: {
+          nav: false,
+          controls: true,
+          autoplay: false,
+        }
+      },
+    },
+    'responsive3': {
+      items: 3,
+      autoplay: true,
+      responsive: {
+        350: {
+          controlsText: ['&lt;', '&gt;'],
+          autoplayText: ['&gt;', '||'],
+        },
+        500: {
+          controlsText: ['prev', 'next'],
+          autoplayText: ['start', 'stop'],
+        }
+      },
+    },
+    'responsive4': {
+      items: 3,
+      responsive: {
+        350: {
+          touch: false,
+          mouseDrag: false,
+          arrowKeys: false,
+        },
+        500: {
+          touch: true,
+          mouseDrag: true,
+          arrowKeys: true,
+        }
+      },
+    },
+    'responsive5': {
+      fixedWidth: fw,
+      autoHeight: false,
+      responsive: {
+        350: {
+          autoHeight: true,
+          fixedWidth: fw + 100,
+        }
+      },
+    },
+    'responsive6': {
+      fixedWidth: fw,
+      edgePadding: edgepadding,
+      gutter: gutter,
+      loop: false,
+    },
+    'arrowKeys': {
+      container: '',
+      items: 3,
+      arrowKeys: true,
+    },
+    'autoplay': {
+      container: '',
+      items: 3,
+      speed: 300,
+      autoplay: true,
+      autoplayHoverPause: true,
+      autoplayTimeout: 3500,
+      autoplayText: ['▶', '❚❚'],
+      // autoplayButtonOutput: false,
+    },
+    'vertical': {
+      container: '',
+      items: 3,
+      axis: 'vertical',
+    },
+    'vertical-gutter': {
+      container: '',
+      items: 3,
+      axis: 'vertical',
+      gutter: gutter,
+    },
+    'vertical-edgePadding': {
+      container: '',
+      items: 3,
+      axis: 'vertical',
+      edgePadding: edgepadding,
+    },
+    'vertical-edgePadding-gutter': {
+      container: '',
+      items: 3,
+      axis: 'vertical',
+      gutter: gutter,
+      edgePadding: edgepadding,
+    },
+    'animation1': {
+      container: '',
+      mode: 'gallery',
+      items: 2,
+      animateIn: classIn,
+      animateOut: classOut,
+      speed: 1000,
+    },
+    'animation2': {
+      container: '',
+      mode: 'gallery',
+      items: 2,
+      speed: 0,
+    },
+    'lazyload': {
+      container: '',
+      items: 3,
+      edgePadding: 40,
+      lazyload: true,
+      lazyloadSelector: '.tns-lazy',
+    },
+    'customize': {
+      container: '',
+      items: 3,
+      controlsContainer: '#customize-controls',
+      navContainer: '#customize-thumbnails',
+      navAsThumbnails: true,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayButton: '#customize-toggle',
+    },
+    'autoHeight': {
+      container: '',
+      autoHeight: true,
+      items: 1,
+    },
+    'nested_inner': {
+      container: '',
+      items: 3,
+      nested: 'inner',
+      edgePadding: 20,
+      loop: false,
+      slideBy: 'page',
+    },
+    'nested': {
+      container: '',
+      items: 1,
+      loop: false,
+      // autoHeight: true,
+      nested: 'outer',
+    }
+    };
+
+    for (var i in options) {
+    var item = options[i];
+    item.container = '#' + i;
+    item.swipeAngle = false;
+    if (!item.speed) { item.speed = speed; }
+
+    if (doc.querySelector(item.container)) {
+      sliders[i] = tns(options[i]);
+
+      // call test functions
+      if (isTestPage && initFns[i]) { initFns[i](); }
+
+      // insert code
+      if (isDemoPage) {
+        doc.querySelector('#' + i + '_wrapper').insertAdjacentHTML('beforeend', '<pre><code class="language-javascript">' + JSON.stringify(item, function (key, value) {
+          if (typeof value === 'object') {
+            if (value.id) {
+              return "document.querySelector('#" + value.id + "')";
+            }
+          }
+          return value;
+        }, '  ') + '<\/code><\/pre>');
+      }
+
+    // test responsive pages
+    } else if (i.indexOf('responsive') >= 0) {
+      if (isTestPage && initFns[i]) { initFns[i](); }
+    }
+    }
+
+    // goto
+    if (doc.querySelector('#base_wrapper')) {
+    var goto = doc.querySelector('#base_wrapper .goto-controls'),
+        gotoBtn = goto.querySelector('.button'),
+        gotoInput = goto.querySelector('input');
+
+    gotoBtn.onclick = function (event) {
+      var index = gotoInput.value;
+      sliders['base'].goTo(index);
+    };
+    }
+    </script>
+</body>
+</html>

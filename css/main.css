@@ -20,7 +20,11 @@ html {
     float: left;
     color: #F2E3CC;
     font-size: 10px;
-    margin-left: 40%;
+}
+
+#section-buttons-container {
+    display: flex;
+    justify-content: center;
 }
 
 .text-block ul li a,
