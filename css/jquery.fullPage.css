@@ -105,7 +105,7 @@ html.fp-enabled,
 }
 
 .close {
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .close a{
@@ -115,7 +115,7 @@ html.fp-enabled,
 }
 
 .down {    
-    background-color: red;
+    /*background-color: red;*/
     margin-top: 100px;
 }
 
@@ -193,6 +193,7 @@ html.fp-enabled,
     height: 100%;
     cursor: pointer;
     text-decoration: none;
+    border: none;
 }
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
@@ -202,6 +203,7 @@ html.fp-enabled,
     width: 8px;
     border-radius: 100%;
     background-color: #b0b0b0;
+    border: none !important;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -246,6 +248,7 @@ html.fp-enabled,
     transition: opacity 0.2s ease-in;
     width: auto;
     opacity: 1;
+    border: none;
 }
 #fp-nav ul li .fp-tooltip.right {
     right: 20px;

@@ -306,6 +306,6 @@ p{
 @media screen and (max-width: 880px) {
 	fieldset,img {
 	    border: 0;
-	    width: 50%;
+	    /*width: 50%;*/
 	}
 }

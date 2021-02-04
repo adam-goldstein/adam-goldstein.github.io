@@ -1,4 +1,4 @@
-body { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
+body { font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
 li { list-style: none; }
 ul, ol, li { margin: 0; padding: 0; }
 /*.container {
@@ -9,14 +9,14 @@ pre[class*="language-"] > code[data-language] { overflow: auto !important; }
 section { margin: 50px 0; }
 h1 { font-size: 45px; }
 h2 { 
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   text-align: center; 
 }
 @media (min-width: 300px) and (max-width: 799px) {
   h2 { padding-top: 20%; }
 }
 @media (min-width: 800px) {
-  h2 { padding-top: 160px; }
+  /*h2 { padding-top: 160px; }*/
 }
 p { 
   margin: 0;
@@ -119,11 +119,11 @@ img:not(.tns-lazy-img), .lazyload img { height: auto; }
 .thumbnails li {
   display: inline-block;
   cursor: pointer;
-  border: 5px solid #fff;
+  border: 5px solid #F2E3CC;;
 }
 .thumbnails .tns-nav-active {
   background: none;
-  border-color: #000;
+  border-color: #666666;
 }
 .thumbnails li { width: 50px; }
 .thumbnails img { vertical-align: bottom; height: auto; max-height: 50px; }

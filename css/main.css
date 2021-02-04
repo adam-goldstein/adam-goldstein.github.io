@@ -1,4 +1,4 @@
-html {
+html .index{
     background: url(img/placeholder.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6,8 +6,31 @@ html {
     background-size: cover;
 }
 
+html .slider {
+    background-color: #F2E3CC;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html .index textarea:focus, 
+html .index textarea:focus input:focus, 
+html .index textarea:focus a:focus{
+    outline: none;
+}
+
+
+a:link {border: none !important;}
+/* visited link */
+a:visited { border: none !important;}
+/* mouse over link */
+a:hover {border: none !important;}
+/* selected link */
+a:active {border: none !important;} 
+
+body .slider {
+}
+
 .text-block {
-	    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     float: left;
     color: #F2E3CC;
     font-size: 10px;
@@ -20,6 +43,34 @@ html {
     float: left;
     color: #F2E3CC;
     font-size: 10px;
+}
+
+.section-button-back {
+    border: 1px solid;
+    color: #666666;
+    padding: 10px;
+    width: 120px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.button-back {
+    margin: 10px 0 0 10px;
+}
+
+.section-button-back a{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #666666;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.slider-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
 }
 
 #section-buttons-container {
@@ -127,7 +178,7 @@ html {
     }
 
     .text-block p {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .text-block ul li a {
