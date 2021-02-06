@@ -7,7 +7,7 @@ html .index{
 }
 
 html .slider {
-    background-color: #F2E3CC;
+    background-color: #F0F0F0;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -65,12 +65,42 @@ body .slider {
     text-decoration: none;
 }
 
+
+.upper-nav {
+    height: 90px;
+    position: relative;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.upper-nav a{
+    color: #000;
+    font-size: 26px;
+    padding: 0 5px;
+}
+
 .slider-title {
     font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 2px;
+
     text-align: center;
     padding: 20px;
     font-size: 32px;
+    float: left;
+    text-transform: uppercase;
+}
+.other-links {
+    float: left;
+    padding: 33px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 26px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center; 
 }
 
 #section-buttons-container {
@@ -94,7 +124,7 @@ body .slider {
 }
 
 .bg-image {
-    display: none;
+    /*display: none;*/
 }
 
 #menu-main {    

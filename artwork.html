@@ -29,14 +29,15 @@
 <body class="slider">	
     <div class="button-back">
         <ul> 
-          <li class="section-button-back"><a href="index.html" > Back </a></li>
+          <li class="section-button-back"><a href="index.html" > Home </a></li>
         </ul>
     </div>
 		<div id="slider_wrapper">
-        <div class="slider-title">
-          ARTWORK
+        <div class="upper-nav">
+          <a style="font-size: 44px" > Paintings </a>
+          <a href="woodwork.html"> Wood </a>
         </div>
-        <div class="center" id="center">
+         <div class="autoHeight" id="autoHeight">
           <div>
             <div>
               <img src="img/art/adgold_10000-FOMP.jpg" alt="" height="400">
@@ -69,33 +70,6 @@
               Nisi harum earum consectetur laudantium iusto, laboriosam.
             </p>-->
           </div>
-        </div>
-        <div class="customize-tools">
-          <ul class="thumbnails" id="customize-thumbnails">
-            <li>
-              <img src="img/art/adgold_10000-FOMP.jpg" alt="" width="600" >
-            </li>
-            <li>
-              <img src="img/art/adgold_OVER-WERNERS-DESK.jpg" alt="" width="600" height="400">
-            </li>
-            <li>
-              <img src="img/art/adgold_detail_OVER-WERNERS-DESK.jpg" alt="" width="600" height="400">
-            </li>
-            <li>
-              <img src="img/art/adgold_WHEN-RED-ONE-GREEN.jpg" alt="" width="600" height="400">
-            </li>
-          </ul>
-          <ul class="controls" id="customize-controls">
-            <li class="prev">
-              <img src="images/angle-left.png" alt="">
-            </li>
-            <li class="next">
-              <img src="images/angle-right.png" alt="">
-            </li>
-          </ul>
-          <!--<div class="playbutton-wrapper">
-            <button id="customize-toggle">Pause</button>
-          </div>-->
         </div>
       </div>
 	<script src="js/prism.js"></script>
@@ -262,12 +236,20 @@
       },
     },
 
+    'autoHeight': {
+      container: '',
+      autoHeight: true,
+      items: 1,
+      controls: false,
+    },
+
     'center': {
       container: '',
-      items: 2,
+      items: 1,
       center: true,
       loop: false,
       nav: true,
+      autoHeight: true,
       controls: false,
       controlsContainer: '#customize-controls',
       navContainer: '#customize-thumbnails',
@@ -280,6 +262,7 @@
     'customize': {
       container: '',
       items: 1,
+      autoHeight: true,
       center: true,
       controlsContainer: '#customize-controls',
       navContainer: '#customize-thumbnails',
