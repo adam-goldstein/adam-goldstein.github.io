@@ -1,4 +1,5 @@
 html .index{
+    font-family: 'Source Sans Pro', sans-serif;
     background: url(img/placeholder.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6,7 +7,7 @@ html .index{
     background-size: cover;
 }
 
-html .slider {
+html {
     background-color: #F0F0F0;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -38,6 +39,35 @@ body .slider {
     width: 100%;
 }
 
+.top-nav {
+    margin-bottom: 40px;
+    background-color: #5C5C5C;
+    height: 75px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    opacity: 0.9;
+}
+
+.top-nav ul{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.nav-logo {
+    float: left;
+    width: 100px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-logo img{
+}
+
 .section-button {
     font-family: 'Source Sans Pro', sans-serif;
     float: left;
@@ -45,40 +75,49 @@ body .slider {
     font-size: 10px;
 }
 
-.section-button-back {
-    border: 1px solid;
+.section-button-left,
+.section-button-right {
+    border: 1px solid #F2E3CC;
     color: #666666;
-    padding: 10px;
-    width: 120px;
+    padding: 5px;
+    width: 90px;
     margin-right: 10px;
     text-align: center;
 }
 
-.button-back {
-    margin: 10px 0 0 10px;
+.section-button-left {
+    float: left;
 }
 
-.section-button-back a{
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #666666;
+.section-button-right {
+    float: right;
+}
+
+.section-button-left a,
+.section-button-right a{
+    color: #F2E3CC;
     font-size: 18px;
     text-decoration: none;
 }
 
 
-.upper-nav {
+.secondary-nav {
     height: 90px;
-    position: relative;
+    padding-top: 10%;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.upper-nav a{
+.secondary-nav a {
     color: #000;
     font-size: 26px;
     padding: 0 5px;
+}
+
+#center_wrapper {
+    padding: 2% 0 15% 0;
 }
 
 .slider-title {
@@ -119,12 +158,16 @@ body .slider {
 	text-decoration: underline;
 }
 
-.arrow-down {
-    display: none;
-}
-
 .bg-image {
     /*display: none;*/
+}
+
+.adam-title {
+    text-transform: uppercase; 
+    color: #F2E3CC; 
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 #menu-main {    
@@ -167,8 +210,10 @@ body .slider {
 .arrow-down {
     position: absolute;
     z-index: 4;
-    left: 45%;
     bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 } 
 
 .arrow-up {
@@ -181,12 +226,56 @@ body .slider {
 
 .arrow-down img,
 .arrow-up img {
-    border: 0;
-    padding: 15px 0;
+    width: 30px;
+    padding: 10px 0;
 }
 
 #slide1-work img {
     width: 50%;
+}
+
+#about {
+    background-color: #F0F0F0;
+    padding: 10% 30% 0 30%;
+    text-align: center;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.site-h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+.social {
+    color: #000;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    float: right;
+    background-color: #f0f0f0;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.footer-icons li {
+    float: left;
+    padding: 5px;
+}
+
+.footer-icons a {
+    color: #5c5c5c;
+    width: 10px;
 }
 
 @media screen and (max-width: 880px) {

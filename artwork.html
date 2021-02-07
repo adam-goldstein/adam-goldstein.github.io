@@ -12,6 +12,7 @@
 	<link rel="icon" href="img/favicon.png" type="image/png">
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 
 	<!-- TINY SLIDER -->
 
@@ -27,51 +28,71 @@
 	<!-- TINY SLIDER END -->
 </head>
 <body class="slider">	
-    <div class="button-back">
+    <div class="top-nav">
+        <a href="index.html"> <img class="nav-logo" src="img/placeholder-mobile.jpg"> </a>
         <ul> 
-          <li class="section-button-back"><a href="index.html" > Home </a></li>
+          <li class="section-button-right"><a href="about.html" > About </a></li>
+          <li class="section-button-right"><a href="assets/adam_CV_EN_2021.pdf" target="_blank" > CV </a></li>
         </ul>
     </div>
-		<div id="slider_wrapper">
-        <div class="upper-nav">
-          <a style="font-size: 44px" > Paintings </a>
-          <a href="woodwork.html"> Wood </a>
+		<div id="center_wrapper">
+        <div class="secondary-nav">
+          <a style="font-size: 34px; font-weight: 600">Paintings</a> </br>
+          <a style="letter-spacing: 1px; font-size: 22px;" href="woodwork.html">Wood</a>
+          <a style="letter-spacing: 1px; font-size: 22px;" href="woodwork.html">Installations</a>
         </div>
-         <div class="autoHeight" id="autoHeight">
-          <div>
-            <div>
+        <div class="center" id="center">
+          <div class="item">
+            <div class="img">
               <img src="img/art/adgold_10000-FOMP.jpg" alt="" height="400">
             </div>
-            <!--<p>
+            <p>
               Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
-            </p>-->
+            </p>
           </div>
-          <div>
-            <div>
+          <div class="item">
+            <div class="img">
               <img src="img/art/adgold_OVER-WERNERS-DESK.jpg" alt="" height="400">
             </div>
-            <!--<p>
-              Nisi inventore quo delectus perspiciatis voluptatibus, quae.
-            </p>-->
+            <p>
+              Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
+            </p>
           </div>
-          <div>
-            <div>
+          <div class="item">
+            <div class="img">
               <img src="img/art/adgold_detail_OVER-WERNERS-DESK.jpg" alt="" height="400">
             </div>
-            <!--<p>
-              Corrupti, libero minima nihil expedita officiis? Quo.
-            </p>-->
-          </div>
-          <div>
-            <div>
-              <img src="img/art/adgold_WHEN-RED-ONE-GREEN.jpg" alt="" height="400">
-            </div>
-            <!--<p>
-              Nisi harum earum consectetur laudantium iusto, laboriosam.
-            </p>-->
+            <p>
+              Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
+            </p>
           </div>
         </div>
-      </div>
+    </div>
+    <div class="footer">
+          <ul class="footer-icons">
+            <li>
+              <a href="instagram.com">
+                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social" href="instagram.com">
+                <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social" href="tel:015218401349">
+                <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social" href="mailto:adgold89@gmail.com">
+                <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+    </div>
+        
 	<script src="js/prism.js"></script>
     <script>
 
@@ -243,20 +264,12 @@
       controls: false,
     },
 
-    'center': {
+     'center': {
       container: '',
       items: 1,
       center: true,
       loop: false,
-      nav: true,
-      autoHeight: true,
       controls: false,
-      controlsContainer: '#customize-controls',
-      navContainer: '#customize-thumbnails',
-      navAsThumbnails: true,
-      autoplay: false,
-      autoplayTimeout: 1000,
-      autoplayButton: '#customize-toggle',
     },
 
     'customize': {
