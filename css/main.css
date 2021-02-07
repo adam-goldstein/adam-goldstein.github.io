@@ -72,15 +72,16 @@ body .slider {
     font-family: 'Source Sans Pro', sans-serif;
     float: left;
     color: #F2E3CC;
-    font-size: 10px;
+    font-size: 18px;
 }
 
 .section-button-left,
 .section-button-right {
     border: 1px solid #F2E3CC;
-    color: #666666;
+    color: #F2E3CC;
+    font-size: 18px;
     padding: 5px;
-    width: 90px;
+    width: 80px;
     margin-right: 10px;
     text-align: center;
 }
@@ -236,12 +237,13 @@ body .slider {
 
 #about {
     background-color: #F0F0F0;
-    padding: 10% 30% 0 30%;
+    padding: 10% 25% 0 25%;
     text-align: center;
 }
 
 .about-text p {
     margin-bottom: 15px;
+    font-size: 16px;
     padding: 0;
 }
 
@@ -262,6 +264,7 @@ body .slider {
     float: right;
     background-color: #f0f0f0;
     position: fixed;
+    padding-top: 10px;
     bottom: 0;
     height: 40px;
     opacity: 0.8;
@@ -276,6 +279,14 @@ body .slider {
 .footer-icons a {
     color: #5c5c5c;
     width: 10px;
+}
+
+.footer-home {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    font-size: 6px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 880px) {
@@ -311,6 +322,10 @@ body .slider {
     #fp-nav ul, .fp-slidesNav ul {
         display: none;
     }
+
+    #about {
+    padding: 15% 15% 0 15%;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -318,6 +333,14 @@ body .slider {
     #myVideo {
         display: none;
     }
+
+    .secondary-nav {
+        padding-top: 25%;
+    }
+
+    #center_wrapper {
+        padding: 20% 0 15% 0;
+    }   
 
     .text-block {
         margin-left: 40px;
@@ -338,5 +361,9 @@ body .slider {
 
     #fp-nav ul, .fp-slidesNav ul {
         display: none;
+    }
+
+    #about {
+        padding: 25% 25% 0 25%;
     }
 }
