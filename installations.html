@@ -35,13 +35,21 @@
           <a href="assets/adam_CV_EN_2021.pdf" target="_blank"><li class="section-button-right"> CV </li></a>
         </ul>
     </div>
-		<div id="center_wrapper">
+		<div id="customize_wrapper">
         <div class="secondary-nav">
           <a style="font-size: 34px; font-weight: 600">Installations</a> </br>
           <a style="letter-spacing: 1px; font-size: 22px;" href="artwork.html">Artworks</a>
           <a style="letter-spacing: 1px; font-size: 22px;" href="objects.html">Objects</a>
         </div>
-        <div class="center" id="center"> 
+        <ul class="controls" id="customize-controls">
+            <li class="prev">
+              <img src="assets/angle-left.png" alt="">
+            </li>
+            <li class="next">
+              <img src="assets/angle-right.png" alt="">
+            </li>
+        </ul>
+        <div class="customize" id="customize"> 
            <div class="item">
             <div class="img">
               <img src="img/installations/Alona-Rodeh-DA-web.jpg" alt="" height="400">
@@ -138,6 +146,25 @@
               Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
             </p>-->
           </div>
+        </div>
+        <div class="customize-tools">
+          <ul class="thumbnails" id="customize-thumbnails">
+            <li>
+              <img src="img/artwork/10000-FOMP-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/About-the-night-eliptic-space-(80---60-cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Untitled-200--200-cm-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Untitled-(180--180-cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/TP1-web.jpg" alt="" width="600" height="400">
+            </li>
+          </ul>
         </div>
     </div>
     <div class="footer">
@@ -336,12 +363,18 @@
       controls: false,
     },
 
-     'center': {
+    'center': {
       container: '',
       items: 1,
       center: true,
       loop: false,
       controls: false,
+      navAsThumbnails: true,
+      controlsContainer: '#customize-controls',
+      navContainer: '#customize-thumbnails',
+      autoplay: false,
+      autoplayTimeout: 1000,
+      autoplayButton: '#customize-toggle',
     },
 
     'customize': {
@@ -354,7 +387,9 @@
       navAsThumbnails: true,
       autoplay: false,
       autoplayTimeout: 1000,
-      autoplayButton: '#customize-toggle',
+      autoplayButton: false,
+      loop: true,
+      mouseDrag: true,
     },
     };
 

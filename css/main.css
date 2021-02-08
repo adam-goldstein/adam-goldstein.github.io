@@ -104,7 +104,7 @@ body .slider {
 
 .secondary-nav {
     height: 90px;
-    padding-top: 7%;
+    padding-top: 100px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: uppercase;
@@ -121,6 +121,10 @@ body .slider {
     padding: 2% 0 15% 0;
 }
 
+.work-title {
+    padding: 0;
+}
+
 .slider-title {
     font-family: 'Source Sans Pro', sans-serif;
 
@@ -130,6 +134,7 @@ body .slider {
     float: left;
     text-transform: uppercase;
 }
+
 .other-links {
     float: left;
     padding: 33px;
@@ -351,7 +356,7 @@ body .slider {
     }
 
     .secondary-nav {
-        padding-top: 1%;
+        padding-top: 20%;
     }
 
     #center_wrapper {
