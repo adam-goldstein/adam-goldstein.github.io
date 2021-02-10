@@ -338,9 +338,18 @@ body .slider {
     .secondary-nav {
         padding-top: 15%;
     }
+    .adam-title {
+        padding-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 450px) {
+
+    #about {
+        background-color: #F0F0F0;
+        padding: 10% 15% 10% 15%;
+        text-align: center;
+    }
 
     #myVideo {
         display: none;
@@ -389,7 +398,7 @@ body .slider {
     }
 
     #about {
-        padding: 30% 25% 0 25%;
+        padding: 30% 25%;
     }
 
     .nav-logo {
