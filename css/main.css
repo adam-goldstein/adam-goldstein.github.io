@@ -359,6 +359,11 @@ body .slider {
         width: 70px;
     }
 
+    /* SLIDER IMG MOBILE */
+    .img {
+        max-height: 400px;
+    }
+
     .footer-home {
         font-size: 5px;
     }
