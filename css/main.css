@@ -47,7 +47,7 @@ body .slider {
     position: fixed;
     width: 100%;
     z-index: 4;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .top-nav ul{
