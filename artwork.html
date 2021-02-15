@@ -28,19 +28,35 @@
 	<!-- TINY SLIDER END -->
 </head>
 <body class="slider">	
-    <div class="top-nav">
+    <div class="menu-wrapper">
+       <header class="header">
+        <a href="index.html" class="logo"><img class="nav-logo" src="img/placeholder-mobile.jpg"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="artwork.html">Artwork</a></li>
+            <li><a href="objects.html">Objects</a></li>
+            <li><a href="installations.html">Installations</a></li>
+          
+          <li> <a href="about.html"> About </a> </li>
+          <li> <a href="assets/adam_CV_EN_2021.pdf" target="_blank"> CV </a></li>
+        </ul>
+      </header>
+    </div>
+
+    <!--<div class="top-nav">
         <a href="index.html"> <img class="nav-logo" src="img/placeholder-mobile.jpg"> </a>
         <ul> 
           <a href="about.html"><li class="section-button-right"> About </li> </a>
           <a href="assets/adam_CV_EN_2021.pdf" target="_blank"><li class="section-button-right"> CV </li></a>
         </ul>
-    </div>
+    </div>-->
 		<div id="customize_wrapper">
-        <div class="secondary-nav">
+        <!--<div class="secondary-nav">
           <a style="font-size: 34px; font-weight: 600">Artworks</a> </br>
           <a style="letter-spacing: 1px; font-size: 22px;" href="objects.html">Objects</a>
           <a style="letter-spacing: 1px; font-size: 22px;" href="installations.html">Installations</a>
-        </div> 
+        </div> -->
         <ul class="controls" id="customize-controls">
             <li class="prev">
               <img src="assets/angle-left.png" alt="">
@@ -49,6 +65,7 @@
               <img src="assets/angle-right.png" alt="">
             </li>
         </ul>
+        <h1 class="title-works">Artworks</h1>
         <div class="customize" id="customize">
           <div class="item1">
             <p> "10000 FOMP" | 180cm*180cm | 2020 </p>
