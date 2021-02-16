@@ -473,19 +473,33 @@ body .slider {
   text-decoration: none;
 }
 
+.nav-right {
+    float: right;
+}
+
+.nav-centered {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-centered a:hover,
+.nav-centered a.active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* menu */
 
 .menu-wrapper{
-        width: 100%;
+    width: 100%;
 }
 
 .header .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-}
-
-.menu-links {
 }
 
 /* menu icon */
@@ -590,7 +604,6 @@ body .slider {
 
   .header .menu {
     clear: none;
-    float: right;
     max-height: none;
   }
 
