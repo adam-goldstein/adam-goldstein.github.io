@@ -40,6 +40,14 @@ img:not(.tns-lazy-img), .lazyload img { height: auto; }
   max-width: 600px;
   margin: 0 auto; 
 }
+
+@media screen and (max-width: 450px) { 
+    .img {
+      max-width: 300px;
+    }
+}
+
+
 .img a {
   display: block;
   padding: 22% 0;
