@@ -287,7 +287,7 @@ li.link {
     float: right;
     background-color: #f0f0f0;
     position: fixed;
-    padding-top: 10px;
+    padding: 20px 0;
     bottom: 0;
     height: 40px;
     opacity: 0.8;
@@ -304,13 +304,10 @@ li.link {
     width: 10px;
 }
 
-.footer-home {
-    color: #797979;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    font-size: 6px;
-    padding: 10px;
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
 }
 
 @media screen and (max-width: 880px) {
