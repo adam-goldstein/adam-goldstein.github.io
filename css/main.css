@@ -19,7 +19,10 @@ html .index textarea:focus a:focus{
 }
 
 
-a:link {border: none !important;}
+a:link {
+    border: none !important;
+    text-decoration: none;
+}
 /* visited link */
 a:visited { border: none !important;}
 /* mouse over link */
@@ -79,11 +82,18 @@ body .slider {
 .section-button-right {
     border: 1px solid #F2E3CC;
     color: #F2E3CC;
-    font-size: 18px;
+    letter-spacing: 1px;
     padding: 5px;
     width: 80px;
     margin-right: 10px;
     text-align: center;
+}
+
+li.link {
+    color: #F2E3CC;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .section-button-left {
@@ -92,6 +102,7 @@ body .slider {
 
 .section-button-right {
     float: right;
+    margin-left: 20px;
 }
 
 .section-button-left a,
@@ -103,7 +114,6 @@ body .slider {
 
 
 .secondary-nav {
-    height: 90px;
     padding-top: 100px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
@@ -111,8 +121,12 @@ body .slider {
     letter-spacing: 2px;
 }
 
+#customize > .tns-item {
+    color: #5C5C5C;
+}
+
 .secondary-nav a {
-    color: #000;
+    color: #797979;
     font-size: 26px;
     padding: 0 5px;
 }
@@ -242,6 +256,7 @@ body .slider {
 
 #about {
     background-color: #F0F0F0;
+    color: #797979;
     padding: 10% 25% 0 25%;
     text-align: center;
 }
@@ -254,15 +269,15 @@ body .slider {
 
 .site-h1 {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 28px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 600;
 }
 
 .social {
-    color: #000;
+    color: #797979;
     padding: 10px;
 }
 
@@ -290,6 +305,7 @@ body .slider {
 }
 
 .footer-home {
+    color: #797979;
     width: 100%;
     bottom: 0;
     position: absolute;
@@ -351,6 +367,10 @@ body .slider {
         text-align: center;
     }
 
+    .site-h1 {
+        width: 100%;
+    }
+
     #myVideo {
         display: none;
     }
@@ -403,25 +423,45 @@ body .slider {
     }
 
     #about {
-        padding: 30% 25%;
+        padding: 100px 70px;
     }
 
     .nav-logo {
-        width: 90px;
-        padding: 7px 7px 0 0;
+        /*width: 90px;
+        padding: 7px 7px 0 0;*/
+        display: none;
+    }
+
+    #customize > .tns-item {
+        color: #5C5C5C;
+        font-size: 14px;
     }
 
     .top-nav {
-        height: 62px;
+        height: 60px;
+        text-align: left;
+        width: 100%;
+    }
+
+    li.link {
+        padding: 0px 9px;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+    }
+
+    .section-button-right {
+        float: none;
     }
 
     .top-nav ul {
         padding: 15px 0px;
+        display: flex;
+        float: none;
     }
 
-    .section-button-left, 
-    .section-button-right{
-        width: 70px;
-        font-size: 16px;
+    .section-button-right {
+        margin-left:10px;
+        width: 50px;
+        font-size: 12px;
     }
 }

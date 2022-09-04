@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html class="index" lang="en">
+<html class="slider" lang="en">
 <head>
-	<title> Adam Goldstein </title>
+	<title> Artwork </title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,128 +11,496 @@
 
 	<link rel="icon" href="img/favicon.png" type="image/png">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 
 	<!-- TINY SLIDER -->
 
 	<link rel="stylesheet" href="css/tiny-slider/prism.css">
-    <link rel="stylesheet" href="css/tiny-slider/tiny-slider.css">
-    <link rel="stylesheet" href="css/tiny-slider/styles.css">
+  <link rel="stylesheet" href="css/tiny-slider/tiny-slider.css">
+  <link rel="stylesheet" href="css/tiny-slider/styles.css">
 
 	<meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">	
 	<!-- TINY SLIDER END -->
-
-	<!-- FULL PAGE -->
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
-
-	<!-- VIDEO -->
-	<link rel="stylesheet" href="css/video.css">
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				verticalCentered: true,
-				sectionsColor: ['#5C5C5C', '#666666'],
-				anchors: ['firstPage', 'secondPage'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['Home', 'Artwork'],
-				afterRender: function(){
-					//playing the video
-					$('video').get(0).play();
-				}
-			});
-		});
-		var x = document.getElementById("myVideo");
-		function getPlaySpeed() { 
-		  alert(x.playbackRate);
-		} 
-
-		function setPlaySpeed() { 
-		  x.playbackRate = 2.0;
-		} 
-	</script>
 </head>
-<body>	
-	<div id="fullpage">
-		<!-- VIDEO -->
-		<div class="section" id="section0">
-			<div class="arrow-down">
-				<a class="adam-home">  </a>
-				<a class="arrow-down-link" data-menuanchor="section" href="#section1"> <p class="adam-title"> Adam Goldstein </br><img src="assets/arrow-down.svg"> </p> </a>
-			</div>
-			<video autoplay loop muted id="myVideo" data-menuanchor="section0" >
-					<source src="assets/video.mp4" type="video/mp4">
-			</video>
-			<div class="bg-image">
-				<img src="img/placeholder.jpg">
-			</div>
-		</div>
+<body class="slider">	
+    <div class="top-nav">
+        <a href="index.html"> <img class="nav-logo" src="img/placeholder-mobile.jpg"> </a>
+        <ul> 
+          <a href="objects.html"><li class="link"> Objects </li> </a>
+          <a href="installations.html"><li class="link"> Installations </li> </a>
+          <a href="index.html"><li class="link"> Paintings </li> </a>
+          <a href="about.html"><li class="link"> About </li></a>
+          <a href="assets/GLC_Adam Goldstein_ES-EN.pdf" target="_blank"><li class="section-button-right"> CV </li></a>
+        </ul>
+    </div>
+		<div id="customize_wrapper">
+        <ul class="controls" id="customize-controls">
+            <li class="prev">
+              <img src="assets/angle-left.png" alt="">
+            </li>
+            <li class="next">
+              <img src="assets/angle-right.png" alt="">
+            </li>
+        </ul>
+        <div class="customize" id="customize">
+          <div class="item1">
+            <div class="img">
+              <img src="img/artwork/10000-FOMP-web.jpg" alt="" height="400">
+            </div>
+			<p> "10000 FOMP" | 180cm*180cm | 2020 </p>
+          </div>
+          <div class="item2">
+            <div class="img">
+              <img src="img/artwork/About-the-night-eliptic-space-(80---60-cm)-web.jpg" alt="" height="400">
+            </div>
+			<p> "Elliptic Space-About the night" | 80cm * 60cm | 2021 </p>
+          </div>
+          <div class="item3">
+            <div class="img">
+              <img src="img/artwork/Amazona-(200---200-cm)-web.jpg" alt="" height="400">
+            </div>
+			<p> "Amazona" | 200cm * 200cm | 2018 </p>
+          </div>
+          <div class="item4">
+            <div class="img">
+              <img src="img/artwork/Chromatic-Chimera-web.jpg" alt="" height="400">
+            </div>
+			<p> "Chromatic Chimera" | 200cm * 150cm | 2019 </p>
+          </div>
+          <div class="item5">
+            <div class="img">
+              <img src="img/artwork/ES-(120---100-cm)-web.jpg" alt="" height="400">
+            </div>
+			<p>  "Elliptic Space" | Graphite on MDF primed | 190cm *120cm | 2019 </p>
+          </div>
+          <div class="item6">
+            <div class="img">
+              <img src="img/artwork/Figurative-side-of-abstraction-web.jpg" alt="" height="400">
+            </div>
+			<p>  "Figurative side of Abstraction" | 130cm *140cm | 2021 </p>
+          </div>
+          <div class="item7">            
+            <div class="img">
+              <img src="img/artwork/HALL-2019-and-Partner-(200---300-cm)-web.jpg" alt="" height="400">
+            </div>
+			<p> "HAL 2019 & Partner" | 300cm *200cm | 2019 </p>
+          </div>
+          <div class="item8">            
+            <div class="img">
+              <img src="img/artwork/Light-(248--150cm)-web.jpg" alt="" height="400">
+            </div>
+			<p> "Light" | 245cm *145cm | 2018 </p>
+          </div>
+          <div class="item9">
+            <div class="img">
+              <img src="img/artwork/Mein-tower-(80--240-cm)-web.jpg" alt="" height="400">
+            </div>
+			<p> "Mein Tower" | 80cm * 252cm | 2020 </p>
+          </div>
+           <div class="item10">
+            <div class="img">
+              <img src="img/artwork/ONE-GREEN-web.jpg" alt="" height="400">
+            </div>
+			<p> "One Green" | 130cm * 140cm | 2020 </p>
+          </div>
+          <div class="item11">
+            <div class="img">
+              <img src="img/artwork/Over-Werners-desk-web.jpg" alt="" height="400">
+            </div>
+			<p> "Over Werner`s Desk" | 100cm * 175cm | 2020 </p>
+          </div>
+          <div class="item12">
+            <div class="img">
+              <img src="img/artwork/Polo-sur-2-web.jpg" alt="" height="400">
+            </div>
+			<p> "Polo Sur" | 150cm * 110cm | 2021 </p>
+          </div>
+          <div class="item13">
+            <div class="img">
+              <img src="img/artwork/S-B-S-web.jpg" alt="" height="400">
+            </div>
+			<p>  "S-B-S" | 175cm * 100cm | 2020 </p>
+          </div>
+          <div class="item14">            
+            <div class="img">
+              <img src="img/artwork/T-P-2-(130---140-cm)-web.jpg" alt="" height="400">
+            </div>
+			<p>  "T-P-2" | 140cm * 130cm | 2020 </p>
+          </div>
+          <div class="item15">            
+            <div class="img">
+              <img src="img/artwork/TP1-web.jpg" alt="" height="400">
+            </div>
+			<p>  "T-P-1" | 175cm * 100 | 2020 </p>
+          </div>
+          <div class="item16">
+            <div class="img">
+              <img src="img/artwork/TW-(200--200-cm-web.jpg" alt="" height="400">
+            </div>
+			<p>  "N-L" | 200cm * 200cm | 2018 </p>
+          </div>
+          <div class="item17">            
+            <div class="img">
+              <img src="img/artwork/Untitled-(180--180-cm)-web.jpg" alt="" height="400">
+            </div>
+			<p> "Untitled" | 180cm * 180cm | 2019 </p>
+          </div>
+          <div class="item18">
+            <div class="img">
+              <img src="img/artwork/Untitled-200--200-cm-web.jpg" alt="" height="400">
+            </div>
+			<p>  "A-L" | 180cm * 180cm | 2019 </p>
+          </div>
+          <div class="item19">            
+            <div class="img">
+              <img src="img/artwork/VS-(200--150cm)-web.jpg" alt="" height="400">
+            </div>
+			<p>  "VS" | 200cm * 150cm | 2018 </p>
+          </div>
+          <div class="item20">            
+            <div class="img">
+              <img src="img/artwork/WHEN-RED-web.jpg" alt="" height="400">
+            </div>
+			<p>  "When Red" | 130cm * 140 cm | 2020 </p>
+          </div>
+        </div>
+        <div class="customize-tools">
+          <ul class="thumbnails" id="customize-thumbnails">
+            <li>
+              <img src="img/artwork/10000-FOMP-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/About-the-night-eliptic-space-(80---60-cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Untitled-200--200-cm-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Untitled-(180--180-cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/TP1-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Figurative-side-of-abstraction-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/HALL-2019-and-Partner-(200---300-cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Light-(248--150cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Mein-tower-(80--240-cm)-web.jpg" alt="" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/ONE-GREEN-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Over-Werners-desk-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Polo-sur-2-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/S-B-S-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/T-P-2-(130---140-cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/TP1-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/TW-(200--200-cm-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Untitled-(180--180-cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/Untitled-200--200-cm-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/VS-(200--150cm)-web.jpg" alt="" width="600" height="400">
+            </li>
+            <li>
+              <img src="img/artwork/WHEN-RED-web.jpg" alt="" width="600" height="400">
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="footer">
+          <ul class="footer-icons">
+            <li>
+              <a class="social" href="https://www.instagram.com/adam_goldstein_t/" target="_blank">
+                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social" href="https://www.facebook.com/adam.goldstein.t" target="_blank">
+                <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social" href="tel:015218401349">
+                <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social" href="mailto:adgold89@gmail.com">
+                <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+    </div>
+        
+	  <script src="js/prism.js"></script>
+    <script>
 
-		<!-- PORTFOLIO BUTTONS -->
-		<div class="section" id="section1">
-			<div class="arrow-up">
-				<a data-menuanchor="section" href="#section0"><img src="assets/arrow-up.svg"></a>
-			</div>
-			<div id="section-buttons-container">
-				<a href="artwork.html">
-					<div class="section-button">
-						<ul> 
-							<li class="button"> Portfolio </a></li>
-						</ul>
-					</div>
-				</a>
-				<a href="about.html">
-					<div class="section-button">
-						<ul> 
-							<li class="button"> About </li>
-						</ul>
-					</div>
-				</a>
-				<a href="assets/adam_CV_EN_2021.pdf" target="_blank">
-					<div class="section-button">
-						<ul> 
-							<li class="button"> CV </li>
-						</ul>
-					</div>
-				</a>
-				<div class="footer-home">
-		          <p> Design and development Elisa Winograd. © 2021 All rights reserved. </p>
-		    	</div>
-			</div>
-		</div>
+    var doc = document,
+      slideList = doc.querySelectorAll('.slider-container > div'),
+      pageNavContainer = doc.querySelector('.nav'),
+      pageNav = doc.querySelector('.nav ul'),
+      toggleHandle = doc.querySelector('.nav-toggle-handle'),
+      divider = window.innerHeight / 2,
+      scrollTimer,
+      resizeTimer;
 
-		<!-- ABOUT 
-		<div class="section" id="section2">
-			<div class="text-block">
-		    	<p> Un cubo blanco, un arbusto solitario en la esquina, y los residuos citadinos donde hoy orino. </p>
-		    </div>
-		    <div class="arrow-down">
-				<a data-menuanchor="section" href="#section3"><img src="assets/arrow-down.svg"></a>
-			</div>
-		</div>
-		-->
+    toggleHandle.onclick = function () {
+    var classN = pageNavContainer.className;
+    pageNavContainer.className = (classN.indexOf(' active') > 0) ? classN.replace(' active', '') : classN + ' active';
+    };
 
-		<!-- CONTACT 
-		<div class="section" id="section2">
-			<div class="arrow-up">
-				<a data-menuanchor="section" href="#firstPage"><img src="assets/arrow-up.svg"></a>
-			</div>
-			<div class="text-block">
-				<p> Contact Information </p>
-				<p>	adgold89(at)gmail.com </p>
-				<p style="font-color:#F2E3CC;">	015215154653 </p>
-			</div>
-		</div> -->
-	</div>
+    if (window.addEventListener) {
+    window.addEventListener('scroll', function () {
+      clearTimeout(scrollTimer);
+
+      scrollTimer = setTimeout(function () {
+        [].forEach.call(slideList, function (el) {
+          var rect = el.getBoundingClientRect(),
+              navLink = pageNav.querySelector('[href="#' + el.id + '"]');
+          if (rect.top <= divider && rect.bottom > divider) {
+            if (navLink.className !== 'active') { navLink.className = 'active'; }
+          } else {
+            if (navLink.className !== '') { navLink.className = ''; }
+          }
+        });
+      }, 100);
+    });
+
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+
+      resizeTimer = setTimeout(function () {
+        divider = window.innerHeight / 2;
+      }, 100);
+    });
+
+    pageNav.addEventListener('click', function () {
+      var classN = pageNavContainer.className;
+      if (classN.indexOf(' active') > 0) { pageNavContainer.className = classN.replace(' active', ''); }
+    });
+    }
+
+    var mobile = 'false',
+      isTestPage = false,
+      isDemoPage = true,
+      classIn = 'jello',
+      classOut = 'rollOut',
+      speed = 400,
+      doc = document,
+      win = window,
+      ww = win.innerWidth || doc.documentElement.clientWidth || doc.body.clientWidth,
+      fw = getFW(ww),
+      initFns = {},
+      sliders = new Object(),
+      edgepadding = 50,
+      gutter = 10;
+
+    function getFW (width) {
+    var sm = 400, md = 900, lg = 1400;
+    return width < sm ? 150 : width >= sm && width < md ? 200 : width >= md && width < lg ? 300 : 400;
+    }
+    window.addEventListener('resize', function() { fw = getFW(ww); });
+    </script>
+    <script src="js/tiny-slider.js"></script>
+    <script>
+
+    // <script type="module">
+    // import { tns } from '../src/tiny-slider.js';
+
+    var options = {
+    'responsive': {
+      items: 2,
+      controls: false,
+      responsive: {
+        350: {
+          items: 3,
+          controls: true,
+          edgePadding: 30,
+        },
+        500: {
+          items: 4
+        }
+      },
+    },
+    'responsive1': {
+      container: '',
+      gutter: 10,
+      slideBy: 1,
+      responsive: {
+        350: {
+          items: 2,
+          edgePadding: 20,
+        },
+        500: {
+          items: 3,
+          gutter: 0,
+          edgePadding: 40,
+          slideBy: 'page',
+        }
+      },
+    },
+    'responsive2': {
+      items: 3,
+      autoplayTimeout: 350,
+      responsive: {
+        350: {
+          controls: false,
+          autoplay: true,
+          autoplayTimeout: 1000,
+          autoplayHoverPause: true,
+        },
+        500: {
+          nav: false,
+          controls: true,
+          autoplay: false,
+        }
+      },
+    },
+    'responsive3': {
+      items: 3,
+      autoplay: true,
+      responsive: {
+        350: {
+          controlsText: ['&lt;', '&gt;'],
+          autoplayText: ['&gt;', '||'],
+        },
+        500: {
+          controlsText: ['prev', 'next'],
+          autoplayText: ['start', 'stop'],
+        }
+      },
+    },
+    'responsive4': {
+      items: 3,
+      responsive: {
+        350: {
+          touch: false,
+          mouseDrag: false,
+          arrowKeys: false,
+        },
+        500: {
+          touch: true,
+          mouseDrag: true,
+          arrowKeys: true,
+        }
+      },
+    },
+    'responsive5': {
+      fixedWidth: fw,
+      autoHeight: false,
+      responsive: {
+        350: {
+          autoHeight: true,
+          fixedWidth: fw + 100,
+        }
+      },
+    },
+
+    'autoHeight': {
+      container: '',
+      autoHeight: true,
+      items: 1,
+      controls: false,
+    },
+
+    'center': {
+      container: '',
+      items: 1,
+      center: true,
+      loop: false,
+      controls: false,
+      navAsThumbnails: true,
+      controlsContainer: '#customize-controls',
+      navContainer: '#customize-thumbnails',
+      autoplay: false,
+      autoplayTimeout: 1000,
+      autoplayButton: '#customize-toggle',
+    },
+
+    'customize': {
+      container: '',
+      items: 1,
+      autoHeight: true,
+      center: true,
+      controlsContainer: '#customize-controls',
+      navContainer: '#customize-thumbnails',
+      navAsThumbnails: true,
+      autoplay: false,
+      autoplayTimeout: 1000,
+      autoplayButton: false,
+      loop: true,
+      mouseDrag: false,
+    },
+    };
+
+    for (var i in options) {
+    var item = options[i];
+    item.container = '#' + i;
+    item.swipeAngle = false;
+    if (!item.speed) { item.speed = speed; }
+
+    if (doc.querySelector(item.container)) {
+      sliders[i] = tns(options[i]);
+
+      // call test functions
+      if (isTestPage && initFns[i]) { initFns[i](); }
+
+      // insert code
+      if (isDemoPage) {
+        doc.querySelector('#' + i + '_wrapper').insertAdjacentHTML('beforeend', '<pre><code class="language-javascript">' + JSON.stringify(item, function (key, value) {
+          if (typeof value === 'object') {
+            if (value.id) {
+              return "document.querySelector('#" + value.id + "')";
+            }
+          }
+          return value;
+        }, '  ') + '<\/code><\/pre>');
+      }
+
+    // test responsive pages
+    } else if (i.indexOf('responsive') >= 0) {
+      if (isTestPage && initFns[i]) { initFns[i](); }
+    }
+    }
+
+    // goto
+    if (doc.querySelector('#base_wrapper')) {
+    var goto = doc.querySelector('#base_wrapper .goto-controls'),
+        gotoBtn = goto.querySelector('.button'),
+        gotoInput = goto.querySelector('input');
+
+    gotoBtn.onclick = function (event) {
+      var index = gotoInput.value;
+      sliders['base'].goTo(index);
+    };
+    }
+    </script>
 </body>
 </html>
