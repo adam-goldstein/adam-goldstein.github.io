@@ -369,6 +369,7 @@ li.link {
 
     .site-h1 {
         width: 100%;
+        letter-spacing: 1px;
     }
 
     #myVideo {
@@ -385,7 +386,7 @@ li.link {
     }
 
     .footer-home {
-        font-size: 5px;
+        display:none;
     }
 
     .text-block ul li a, .section-button ul li a {
