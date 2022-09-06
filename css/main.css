@@ -269,11 +269,14 @@ li.link {
 
 .site-h1 {
     margin-top: 0px;
-    margin-bottom: 20px;
-    font-size: 28px;
+    color: #F2E3CC;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
+    FONT-size: 24px;
+    float: left;
+    padding: 20px;
 }
 
 .social {
@@ -365,8 +368,9 @@ li.link {
     }
 
     .site-h1 {
-        width: 100%;
         letter-spacing: 1px;
+        font-size: 18px;
+        padding: 20px 0 0 20px;
     }
 
     #myVideo {
@@ -436,7 +440,7 @@ li.link {
     }
 
     .top-nav {
-        height: 60px;
+        height: 100px;
         text-align: left;
         width: 100%;
     }
@@ -452,9 +456,9 @@ li.link {
     }
 
     .top-nav ul {
-        padding: 15px 0px;
+        padding: 0 0 0 10px;
         display: flex;
-        float: none;
+        float: left;
     }
 
     .section-button-right {
